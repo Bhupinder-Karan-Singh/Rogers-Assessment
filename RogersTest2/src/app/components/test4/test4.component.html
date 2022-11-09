@@ -1,0 +1,10 @@
+<div class="bootstrap-wrapper">
+    <div class="container"><br>
+        <div style="text-align:center" class="alert alert-success"><h2>Test 4</h2>
+         <h3>Transforming the content into a line delimited JSON file where each line is a record of entry is in JSON Format</h3>
+        </div><br>
+        <div *ngFor="let s of seo | keyvalue">
+                <pre>{{s | json}}</pre>
+            </div>
+    </div>
+    </div>

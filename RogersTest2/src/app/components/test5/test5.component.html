@@ -1,0 +1,22 @@
+<div class="bootstrap-wrapper">
+    <div class="container"><br>
+        <div style="text-align:center" class="alert alert-success">
+        <h2>Test 5</h2>
+        <h3>Generating a list view</h3>
+        </div><br>
+
+        <div *ngFor="let s of seo">
+            <div class="row">
+                <div class="col">
+                    <td><b><a style="text-decoration: none;" href={{s.canonicalUrl}}>{{s.title}}</a></b>
+                        - {{s.entryTitle}}
+                    </td>
+                </div>
+            </div><br>
+            <div class="row"> 
+                <td>{{s.description}}</td>
+            </div><br><hr>
+        </div>
+
+    </div>
+</div>
